@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const Article = require('./models/articles')
+const Article = require('./models/articles');
 const articleRouter = require('./routes/articles');
 const methodOverride = require('method-override');
 const app = express();

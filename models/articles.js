@@ -33,7 +33,7 @@ const articleSchema = new mongoose.Schema({
     }
 });
 articleSchema.pre('validate', function(next) {
-    if(this.title){
+    if (this.title) {
         this.slug = slugify(this.title, { lower: true, strict: true });
     }
     if(this.markdown) {
