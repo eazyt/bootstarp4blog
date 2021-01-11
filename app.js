@@ -6,7 +6,7 @@ const methodOverride = require('method-override');
 const app = express();
 
 
-// const url = "mongodb+srv://eazytsa:20mylab19?@cluster0-3t4zu.mongodb.net/test?retryWrites=true&w=majority";
+
 mongoose.connect('mongodb://172.15.22.251/blog', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
 
